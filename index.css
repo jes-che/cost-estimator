@@ -64,6 +64,7 @@ h1 {
 
 .tabs p.active {
     color: var(--text-purple-dark);
+    position: relative;
 }
 
 .line {
@@ -72,4 +73,16 @@ h1 {
     background-color: var(--line-color);
     position: absolute;
     top: 98px;
+}
+
+.tabs .active::before {
+    content: "";
+    width: 200%;
+    height: 4px;
+    background-color: var(--text-purple-dark);
+    position: absolute;
+    left: -50%;
+    bottom: -32px;
+    z-index: 1;
+    border-radius: 10px;
 }
