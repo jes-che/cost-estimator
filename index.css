@@ -1,21 +1,60 @@
+/* VARIABLES */
+:root {
+    /* TEXT VARIABLES */
+    --font: "Open Sans", sans-serif;
+    --text-purple-dark: rgb(83, 49, 156);
+    --text-purple-light: rgb(200, 175, 255);
+    --text-gray: rgb(44, 44, 44);
+
+    /* COLOR VARIABLES */
+    --purple-1: rgb(233, 223, 255);
+    
+}
+
 body {
     margin: 0;
-    background-color: rgb(233, 223, 255);
-    font-family: "Open Sans", sans-serif;
+    background-color: var(--purple-1);
+    font-family: var(--font);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 32px;
-    color: rgb(44, 44, 44);
+    color: var(--text-gray);
 }
 
 h1 {
-    color: rgb(83, 49, 156);
+    color: var(--text-purple-dark);
+    margin: 32px 0 64px 0;
 }
 
 .container {
     background-color: white;
     width: 100%;
     max-width: 900px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0 64px 64px 64px;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: var(--text-purple-light);
+    font-weight: bold;
+    padding: 16px;
+}
+
+.tabs p {
+    padding: 8px;
+}
+
+.tabs p:hover {
+    color: var(--text-purple-dark);
+    cursor: pointer;
+}
+
+.tabs p.active {
+    color: var(--text-purple-dark);
 }
