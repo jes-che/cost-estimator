@@ -5,10 +5,12 @@
     --text-purple-dark: rgb(83, 49, 156);
     --text-purple-light: rgb(200, 175, 255);
     --text-gray: rgb(44, 44, 44);
+    --text-white: rgb(255, 255, 255);
 
     /* COLOR VARIABLES */
     --purple-1: rgb(233, 223, 255);
     --line-color: rgb(231, 231, 231); 
+    --bg-white: rgb(255, 255, 255);
     
 }
 
@@ -30,7 +32,7 @@ h1 {
 }
 
 .container {
-    background-color: white;
+    background-color: var(--bg-white);
     width: 100%;
     max-width: 900px;
     display: flex;
@@ -85,4 +87,38 @@ h1 {
     bottom: -32px;
     z-index: 1;
     border-radius: 10px;
+}
+
+.toggle-wrapper {
+    display: flex;
+}
+
+.toggle-wrapper img {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.toggle {
+    background-color: var(--text-purple-dark);
+    width: 140px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px 0 16px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.toggle span:first-of-type {
+    color: var(--text-white);
+}
+
+.toggle span:last-of-type {
+    background-color: var(--bg-white);
+    color: var(--text-purple-dark);
+    padding: 4px 16px;
+    border-radius: 20px;
 }
