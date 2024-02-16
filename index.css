@@ -12,7 +12,8 @@
     --line-color: rgb(231, 231, 231);
     --bar-color: rgb(248, 248, 248);
     --border-color: rgb(210, 210, 210);
-    --bg-purple: rgb(233, 223, 255);
+    --bg-purple-dark: rgb(83, 49, 156);
+    --bg-purple-light: rgb(233, 223, 255);
     --bg-white: rgb(255, 255, 255);
     --bg-light: rgb(250, 247, 255);
     
@@ -20,7 +21,7 @@
 
 body {
     margin: 0;
-    background-color: var(--bg-purple);
+    background-color: var(--bg-purple-light);
     font-family: var(--font);
     display: flex;
     flex-direction: column;
@@ -212,4 +213,60 @@ h1 {
     padding: 0;
     font-weight: bold;
     color: var(--text-gray-light);
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.card-wrapper .card {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    margin: 16px;
+    padding: 16px 32px;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-purple-dark);
+    transition: 0.15s transform ease;
+}
+
+.card-wrapper .card:hover {
+    transform: translateY(-8px);
+}
+
+.card .top-section {
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.card .top-section p {
+    margin: 4px 0;
+}
+
+.card .price {
+    font-size: 42px;
+    color: var(--text-gray-dark);
+}
+
+.card hr {
+    width: 30%;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.card button {
+    border: none;
+    color: var(--text-white);
+    background-color: var(--bg-purple-dark);
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 8px 0;
+    transition: 0.15s transform ease;
+}
+
+.card button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
