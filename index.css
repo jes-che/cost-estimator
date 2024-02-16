@@ -50,6 +50,7 @@ h1 {
     position: relative;
 }
 
+/* TABS */
 .tabs {
     display: flex;
     width: 100%;
@@ -94,6 +95,7 @@ h1 {
     border-radius: 10px;
 }
 
+/* TOGGLE */
 .toggle-wrapper {
     display: flex;
 }
@@ -128,6 +130,7 @@ h1 {
     border-radius: 20px;
 }
 
+/* SESSIONS CARD */
 .sessions-card {
     background-color: var(--bg-light);
     text-align: center;
@@ -156,9 +159,11 @@ h1 {
     margin: 16px 0 32px 0;
 }
 
+/* SLIDER */
 .slider {
     width: 100%;
     position: relative;
+    margin-bottom: 16px;
 }
 
 .slider .bar {
@@ -215,6 +220,7 @@ h1 {
     color: var(--text-gray-light);
 }
 
+/* PRICE CARDS */
 .card-wrapper {
     display: flex;
 }
@@ -229,6 +235,7 @@ h1 {
     font-weight: bold;
     color: var(--text-purple-dark);
     transition: 0.15s transform ease;
+    position: relative;
 }
 
 .card-wrapper .card:hover {
@@ -269,4 +276,20 @@ h1 {
 .card button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.card .top-section .save-header {
+    color: var(--text-white);
+    background: linear-gradient(
+        90deg, 
+        rgba(2, 0, 36, 1) 0%, 
+        rgba(53, 10, 74, 1) 36%, 
+        rgba(83, 49, 156, 1) 100%
+    );
+    position: absolute;
+    top: -24px;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
