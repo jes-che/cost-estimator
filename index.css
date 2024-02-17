@@ -317,4 +317,8 @@ h1 {
     h1 {
         margin: 8px 0 16px 0;
     }
+    .tabs .active::before {
+        width: 150%;
+        left: -25%;
+    }
 }
